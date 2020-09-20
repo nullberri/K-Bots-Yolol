@@ -46,7 +46,7 @@ fh=f/(f-:Fuel)/tS fm=(fh%1)*60 fh-=fh%1 fm-=fm%1 fO=""+fH+h+fM+s
 
 Memory chip with fields
 ```
-gTimef
+gTime
 fTime
 ```
 
