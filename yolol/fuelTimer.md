@@ -7,7 +7,7 @@ and atleast 1 battery named Battery
 e="ERROR" ok="OK" mb="\nBat  "  n="\n"
 fuel=(:Fuel/:MaxFuel)*100 fuel-=fuel%1 bp=:Battery/100 bp-=bp%1
 gas=:Gas/:MaxGas*100 gas-=gas%1 pe=(c<1)*(bp<50)+c*(bp<89) ge=gas<10
-fe=fuel<10 c=fe+ge+pe if c then s=e :err++ else s=ok end
+fe=fuel<10 c=fe+ge+pe if c then s=e else s=ok end
 :power=s+mb+bp+"%\nFuel "+fuel+"%\n"+:ftime+"\nGas "+gas+"%\n"+:gTime
 goto 1
 ```
